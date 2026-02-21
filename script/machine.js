@@ -24,8 +24,17 @@ function showOnly(id) {
 
     const cashOut = document.getElementById('cash-out');
     const addMoney = document.getElementById('add-money');
+    const tmny = document.getElementById('transfer-money');
+    const bill = document.getElementById('pay-bill')
+    const bonus = document.getElementById('get-bonus')
+    const history = document.getElementById('history');
+
     cashOut.classList.add('hidden');
     addMoney.classList.add('hidden');
+    tmny.classList.add('hidden');
+    bill.classList.add('hidden');
+    bonus.classList.add('hidden');
+    history.classList.add('hidden');
 
     // rmv the hidden class
     const rmv = document.getElementById(id);

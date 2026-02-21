@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html data-theme="light">
 
 <head>
     <meta charset="UTF-8" />
@@ -28,7 +28,9 @@
 <body class="bg-base-200">
     <!-- header -->
     <header>
+
         <section class="">
+
             <div class="flex justify-between items-center w-11/12 mx-auto border-b-2 border-gray-300 py-3">
                 <div class="left flex gap-1">
                     <img src="./assets/logo.png" class="w-[60px]" alt="" />
@@ -63,21 +65,21 @@
           <img src="./assets/opt-2.png" alt="" />
           <p>Cash Out</p>
         </button>
-        <button class="btn flex-col h-full py-5 w-full btn-primary btn-soft">
+        <button onclick="showOnly('transfer-money')" class="btn flex-col h-full py-5 w-full btn-primary btn-soft">
           <img src="./assets/opt-3.png" alt="" />
           <p>Transfer Money</p>
         </button>
-        <button class="btn flex-col h-full py-5 w-full btn-primary btn-soft">
+        <button  onclick="showOnly('get-bonus')" class="btn flex-col h-full py-5 w-full btn-primary btn-soft">
           <img src="./assets/opt-4.png" alt="" />
           <p>Get Bonus</p>
         </button>
-        <button class="btn flex-col h-full py-5 w-full btn-primary btn-soft">
+        <button onclick="showOnly('pay-bill')" class="btn flex-col h-full py-5 w-full btn-primary btn-soft">
           <img src="./assets/opt-5.png" alt="" />
           <p>Pay Bill</p>
         </button>
-        <button class="btn flex-col h-full py-5 w-full btn-primary btn-soft">
+        <button onclick="showOnly('history')" class="btn flex-col h-full py-5 w-full btn-primary btn-soft">
           <img src="./assets/opt-6.png" alt="" />
-          <p>Add Money</p>
+          <p>Transaction</p>
         </button>
       </div>
     </section>
@@ -171,9 +173,118 @@
       </div>
     </section>
 
-    <section class="w-11/12 mx-auto space-y-3"id='history'>
+       <section id="transfer-money" class=" w-11/12 mx-auto space-y-3 hidden ">
+      <h2 class="text-2xl font-bold">Transfer Money</h2>
+      <div class="form card bg-base-100 w-full shadow-xs pt-8 rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-bold">User Account Number</label>
+            <input
+              id="user-account-number"
+              type="number"
+              class="input rounded-full bg-base-200"
+              placeholder="Enter 11 Digit  Number"
+              maxlength="11"
+              minlength="11"
+              value="01707589250"
+              required
+            /><br />
+            <label class="label text-neutral font-bold">Amount</label>
+            <input
+              id="transfer-amount"
+              type="number"
+              class="input rounded-full bg-base-200"
+              placeholder="Enter Amount To Transfer"
+            /><br />
+            <label class="label text-neutral font-bold">Pin Number</label>
+            <input
+              id="transfer-pin"
+              type="password"
+              class="input rounded-full bg-base-200"
+              placeholder="Enter 4 Digit Pin Number"
+              maxlength="4"
+              minlength="4"
+            />
+            <button  class="btn btn-primary rounded-full mt-4" id="transfer-btn" >
+              Transfer Money
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <section id="pay-bill" class="w-11/12 mx-auto space-y-3 hidden">
+  <h2 class="text-2xl font-bold">Pay Bill</h2>
+
+  <div class="card bg-base-100 shadow-xs pt-8 rounded-2xl">
+    <div class="card-body">
+      <fieldset class="fieldset">
+
+        <label class="label text-neutral font-bold">Bill Account Number</label>
+        <input
+          id="bill-account-number"
+          type="text"
+          class="input rounded-full bg-base-200"
+          placeholder="Enter 11 Digit Number"
+          maxlength="11"
+          value="01707589250"
+          required
+        /><br />
+
+        <label class="label text-neutral font-bold">Bill Amount</label>
+        <input
+          id="bill-amount"
+          type="number"
+          class="input rounded-full bg-base-200"
+          placeholder="Enter Bill Amount"
+        /><br />
+
+        <label class="label text-neutral font-bold">Pin Number</label>
+        <input
+          id="bill-pin"
+          type="password"
+          class="input rounded-full bg-base-200"
+          placeholder="Enter 4 Digit Pin"
+          maxlength="4"
+        />
+
+        <button class="btn btn-primary rounded-full mt-4" id="bill-btn">
+          Pay Bill
+        </button>
+
+      </fieldset>
+    </div>
+  </div>
+</section>
+<section id="get-bonus" class="w-11/12 mx-auto space-y-3 hidden">
+  <h2 class="text-2xl font-bold">Get Bonus</h2>
+
+  <div class="card bg-base-100 shadow-xs pt-8 rounded-2xl">
+    <div class="card-body">
+
+      <fieldset class="fieldset">
+
+        <label class="label text-neutral font-bold">
+          Enter Your Coupon
+        </label>
+
+        <input
+          id="coupon"
+          type="text"
+          class="input rounded-full bg-base-200"
+          placeholder="Type 'RAMADAN' "
+          maxlength="11"
+          required
+        />
+        <button class="btn btn-primary rounded-full mt-4" id="bonus-btn">
+          Get Bonus
+        </button>
+      </fieldset>
+    </div>
+  </div>
+</section>
+    <section  class="w-11/12 mx-auto space-y-3 hidden"id='history'>
         <h2 class="text-xl font-bold mb-5">Transaction</h2>
-        <div id="history-container">
+        <div id="history-container" class="space-y-5">
             <div class="card w-full bg-base-100 shadow rounded-2xl">
 
             </div>   
@@ -181,9 +292,14 @@
         </div>
 
     </section>
+     
+    
 
     <script src="./script/machine.js"></script>
     <script src="./script/cashout.js"></script>
     <script src="./script/addmoney.js"></script>
+    <script src="./script/transferMoney.js"></script>
+    <script src="./script/payBill.js"></script>
+    <script src="./script/bonus.js"></script>
   </body>
 </html>
