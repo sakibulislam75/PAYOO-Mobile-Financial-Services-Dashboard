@@ -41,23 +41,28 @@
 
 ---
 
-## Screenshots
-
-> 📸 Screenshots coming soon — replace the placeholders below with your actual UI images.
+## UI
 
 <div align="center">
 
-### Login Screen
-![Login Screen](./assets/log-in.pnglogin.png)
-
-### Home Dashboard
-![Home Dashboard](./assets/homepage.png)
-
-### Transfer Money
-![Transfer Money](./assets/cashout.png)
-
-### Pay Bills
-![Pay Bills](./assets/paybill.png)
+<table>
+  <tr>
+    <td align="center"><b>Login Screen</b></td>
+    <td align="center"><b>Home Dashboard</b></td>
+  </tr>
+  <tr>
+    <td><img src="./assets/log-in.png" width="240" height="520" alt="Login Screen" style="border-radius:12px;" /></td>
+    <td><img src="./assets/homepage.png" width="240" height="520" alt="Home Dashboard" style="border-radius:12px;" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Cash Out</b></td>
+    <td align="center"><b>Pay Bills</b></td>
+  </tr>
+  <tr>
+    <td><img src="./assets/cashout.png" width="240" height="520" alt="Cash Out" style="border-radius:12px;" /></td>
+    <td><img src="./assets/paybill.png" width="240" height="520" alt="Pay Bills" style="border-radius:12px;" /></td>
+  </tr>
+</table>
 
 </div>
 
