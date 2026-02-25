@@ -13,9 +13,9 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 ![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?style=flat&logo=daisyui&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-[Features](#features) · [Screenshots](#screenshots) · [Tech Stack](#tech-stack) · [Getting Started](#getting-started) · [Project Structure](#project-structure) · [Roadmap](#roadmap) · [Contributing](#contributing)
+
+
 
 </div>
 
@@ -48,20 +48,19 @@
 <div align="center">
 
 ### Login Screen
-![Login Screen](assets/screenshots/login.png)
+![Login Screen](./assets/log-in.pnglogin.png)
 
 ### Home Dashboard
-![Home Dashboard](assets/screenshots/home.png)
+![Home Dashboard](./assets/homepage.png)
 
 ### Transfer Money
-![Transfer Money](assets/screenshots/transfer.png)
+![Transfer Money](./assets/cashout.png)
 
 ### Pay Bills
-![Pay Bills](assets/screenshots/paybill.png)
+![Pay Bills](./assets/paybill.png)
 
 </div>
 
-> **Tip:** Place your screenshots in `assets/screenshots/` and name them to match the paths above.
 
 ---
 
@@ -132,21 +131,7 @@ payoo/
     └── machine.js          # ATM / machine interaction logic
 ```
 
----
 
-## Roadmap
-
-| Status | Feature |
-|---|---|
-| ✅ Done | Login UI with form validation |
-| ✅ Done | Add money, transfer, bill pay, cash out flows |
-| ✅ Done | Responsive layout with Tailwind + DaisyUI |
-| 🔄 In Progress | Transaction history screen |
-| 🔄 In Progress | Animated page transitions |
-| ⬜ Planned | Dark mode toggle |
-| ⬜ Planned | Backend / API integration |
-| ⬜ Planned | OTP / 2FA authentication UI |
-| ⬜ Planned | Multi-language support |
 
 ---
 
@@ -164,14 +149,11 @@ Contributions are welcome! Here's how to get involved:
 
 ---
 
-## License
-
-This project is released under the [MIT License](LICENSE).
 
 ---
 
 <div align="center">
 
-Built with ❤️ by the Payoo team · Happy coding! 💻
+Built with ❤️ by Sakibul Islam · Happy coding! 💻
 
 </div>
